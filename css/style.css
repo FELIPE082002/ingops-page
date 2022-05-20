@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+*{
+    font-family: 'Alata', sans-serif;
+}
+.zoom:hover {
+    color: black !important; 
+    transition: all .2s ease-in-out; 
+    transform: scale(1.1) ; 
+}
+.navbar{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.navbar-nav{
+    font-size: small;
+}
+.red-boton{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5px;
+}
+
+#price{
+    font-size: 50px;
+}
+#title{
+    margin: 50px;
+}
+#cards{
+    padding: 50px;
+}
+#instagram{
+    background: linear-gradient(60deg, rgba(255,149,23,1) 16%, rgba(239,40,255,1) 53%, rgba(157,0,255,1) 86%);
+}
+#copyright{
+    padding: 0px 50px 0px 50px;
+}
+#redes-cover{
+    width: 100%;
+    height: 50%;
+}
+#redes-cover img{
+    width: 100%;
+}
+#redes-cover #text-redes-cover{
+    width: 100%;
+}
+
+footer ol{
+    list-style: none;
+}
+
+@media(max-width:575px){
+    #pair{
+        display: none;
+    }
+    #title{
+        margin: 10px;
+    }
+    #card{
+        margin: 10px;
+    }
+    #cards{
+        padding: 50px 0px 0px 0px;
+        
+    }
+    #redes-cover img{
+        display: none;
+    }
+    #redes-cover #text-redes-cover{
+        padding: 0px 0px 0px 0px;
+    }
+    
+}
