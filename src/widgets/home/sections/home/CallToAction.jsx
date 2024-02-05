@@ -1,15 +1,26 @@
 import girl from "@/assets/girl-cta.png";
+import circles from "@/assets/circles_img.png";
 import { Typography } from "@material-tailwind/react";
 
 function CallToAction() {
 
 
     const message = `Hola, estoy interesado(a) en sus servicios. ¿Podrían enviarme más información? Gracias.`;
+    const formatMessage = encodeURIComponent(message)
+    
+    let imageCircles
 
-    const formatMessage = encodeURIComponent(message);
+    let imagePath = circles.split('?')[0];
+
+    if (imagePath.startsWith('/')) {
+        imageCircles = imagePath.substring(1);
+    }
+
+    const c = `url('${imageCircles}')`
+    console.log({imageCircles})
 
     return (
-        <div className="flex relative flex-col justify-items-center items-center text-center bg-[url('src/assets/circles.png')] bg-cover bg-center ">
+        <div className={`flex relative flex-col justify-items-center items-center text-center bg-[${c}] bg-cover bg-center `}>
             <div className="text-white p-5">
                 <Typography variant="h2">!NO DEJES QUE PASE ESTA OPORTUNIDAD!</Typography>
                 <Typography variant="h2">HAZ REALIDAD TUS METAS</Typography>

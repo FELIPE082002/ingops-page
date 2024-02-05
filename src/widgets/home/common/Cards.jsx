@@ -4,10 +4,15 @@ import {
     Typography,
 } from "@material-tailwind/react";
 
+function Cards({ img, alt_img, title, text, items, style }) {
+    
+    let image
 
-function Cards({ img, alt_img, title, text, items, style}) {
+    if (img.url.startsWith('/')) {
+        image = img.url.substring(1);
+    }
 
-    const size = style[0].size 
+    const size = style[0].size
 
     return (
         <div className='md:m-10 m-2.5'>
@@ -15,7 +20,7 @@ function Cards({ img, alt_img, title, text, items, style}) {
                 <div className='flex flex-col justify-center items-center gap-5'>
                     {/* icon */}
                     <div>
-                        <img src={img} alt={alt_img} className='w-28' />
+                        <img src={image} alt={alt_img} className='w-28' />
                     </div>
                     {/* titulo */}
                     <div>
