@@ -41,33 +41,37 @@ function NavbarMain() {
 
     const navList = (
         <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+            <li>
 
-            <NavLink
-                to='/'
-                className="flex items-center"
-                onClick={closeMobileNav}
-            >
-                <img src={icon} alt="icon.webp" className="w-20 hidden md:inline-block" />
-            </NavLink>
-
-            {navLinks.map((link) => (
-                <Typography
-                    as="li"
-                    variant="paragraph"
-                    color="gray"
-                    className="p-1 font-normal"
-                    key={link.path}
+                <NavLink
+                    aria-label="links"
+                    to='/'
+                    className="flex items-center"
+                    onClick={closeMobileNav}
                 >
-                    <NavLink
-                        to={link.path}
-                        className="flex items-center"
-                        onClick={closeMobileNav}
-                        style={({ isActive }) => isActive ? { color: 'deep-purple' } : null}
+                    <img src={icon} alt="icon.webp" className="w-20 hidden md:inline-block" />
+                </NavLink>
+            </li>
+            <li className="flex flex-col lg:flex-row gap-2">
+                {navLinks.map((link) => (
+                    <Typography
+                        variant="paragraph"
+                        color="gray"
+                        className="p-1 font-normal"
+                        key={link.path}
                     >
-                        {link.name}
-                    </NavLink>
-                </Typography>
-            ))}
+                        <NavLink
+                            to={link.path}
+                            aria-label="links"
+                            className="flex items-center"
+                            onClick={closeMobileNav}
+                            style={({ isActive }) => isActive ? { color: 'deep-purple' } : null}
+                        >
+                            {link.name}
+                        </NavLink>
+                    </Typography>
+                ))}
+            </li>
         </ul>
     );
 
@@ -79,7 +83,7 @@ function NavbarMain() {
                 <div className="flex items-center gap-4">
                     <div className="mr-4 hidden lg:block">{navList}</div>
                     <div className="flex items-center gap-x-1">
-                        <a href={`https://wa.me/573023075831?text=${formatMessage}`} target="_blank" rel="noopener noreferrer" >
+                        <a href={`https://wa.me/573023075831?text=${formatMessage}`} aria-label="contact" target="_blank" rel="noopener noreferrer" >
                             <Button
                                 variant="gradient"
                                 color="deep-purple"
@@ -91,13 +95,11 @@ function NavbarMain() {
                         </a>
                     </div>
                     <IconButton
-
-                        className="ml-auto h-6 w6 text-inherit  lg:hidden"
+                        className="flex flex-row justify-center ml-auto h-6 text-inherit p-5 lg:hidden"
                         ripple={false}
                         onClick={() => setOpenNav(!openNav)}
                         color="deep-purple"
                     >
-                        {/* Icono de menú / cerrar */}
                         {openNav ? (
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -135,9 +137,11 @@ function NavbarMain() {
             <MobileNav open={openNav}>
                 {navList}
                 <div className="flex items-center gap-x-1">
-                    <Button fullWidth variant="gradient" size="sm" color="deep-purple">
-                        <span>Contactanos</span>
-                    </Button>
+                    <a href={`https://wa.me/573023075831?text=${formatMessage}`} aria-label="contact" target="_blank" rel="noopener noreferrer" >
+                        <Button fullWidth variant="gradient" size="sm" color="deep-purple">
+                            <span>Contactanos</span>
+                        </Button>
+                    </a>
                 </div>
             </MobileNav>
         </Navbar>

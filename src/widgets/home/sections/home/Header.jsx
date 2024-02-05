@@ -11,13 +11,13 @@ function Header() {
         <div className="flex justify-center m-5">En Ingops, combinamos más de 3 años de experiencia en tecnología con una especialización en diseño y desarrollo web y de software a medida. Nuestro equipo de ingenieros y desarrolladores se enfoca en crear soluciones innovadoras y efectivas para ayudarte a alcanzar tus metas empresariales, adaptándonos a tus necesidades específicas.</div>
         <div className="m-5">
           <Button color="deep-purple" className="rounded-full shadow-md">
-            <Typography variant="h5">+100 trabajos</Typography>
+            <Typography variant="h3">+100 trabajos</Typography>
             <Typography className="text-xs">en Latinoamerica</Typography>
           </Button>
         </div>
       </div>
       <div>
-        <img src={headerImg} alt="header_img.webp" className="w-96 md:w-auto" />
+        <img src={headerImg} alt="header_img.webp" loading="lazy" className="w-96 md:w-auto" />
       </div>
     </div>
   )

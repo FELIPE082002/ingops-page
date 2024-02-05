@@ -81,9 +81,12 @@ function Footer() {
                         Contactanos para tener asesoramiento
                     </div>
                     <div>
-                        <Input className='bg-purple' label='Email' />
+                        <div className='flex felx-col md:flex-row gap-1 items-center'>
+                            <label htmlFor="email">Email:</label>
+                            <Input className='bg-white' id="email" />
+                        </div>
                         <br />
-                        <Button className='bg-deep-purple-300 w-full rounded-full'>ENVIAR</Button>
+                        <Button className='bg-deep-purple-900 w-full rounded-full'>ENVIAR</Button>
                     </div>
                 </div>
             </div>

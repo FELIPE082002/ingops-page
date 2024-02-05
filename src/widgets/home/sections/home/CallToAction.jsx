@@ -1,5 +1,5 @@
-import girl from "@/assets/girl-cta.png";
-import circles from "@/assets/circles_img.png";
+import girl from "@/assets/girl-cta.webp";
+import circles from "@/assets/circles_img.webp";
 import { Typography } from "@material-tailwind/react";
 
 function CallToAction() {
@@ -9,18 +9,15 @@ function CallToAction() {
     const formatMessage = encodeURIComponent(message)
     
     let imageCircles
-
+    
     let imagePath = circles.split('?')[0];
-
+    
     if (imagePath.startsWith('/')) {
         imageCircles = imagePath.substring(1);
     }
 
-    const c = `url('${imageCircles}')`
-    console.log({imageCircles})
-
     return (
-        <div className={`flex relative flex-col justify-items-center items-center text-center bg-[${c}] bg-cover bg-center `}>
+        <div style={{ backgroundImage: `url(${imageCircles})` }} className={`flex relative flex-col justify-items-center items-center text-center bg-cover bg-center `}>
             <div className="text-white p-5">
                 <Typography variant="h2">!NO DEJES QUE PASE ESTA OPORTUNIDAD!</Typography>
                 <Typography variant="h2">HAZ REALIDAD TUS METAS</Typography>
