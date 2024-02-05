@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from "@/assets/icons/logo.png";
+import Logo from "@/assets/logo.png";
 import { PhoneIcon, EnvelopeIcon, MapPinIcon } from '@heroicons/react/24/solid'
 import { Button, Input, Typography } from '@material-tailwind/react';
 

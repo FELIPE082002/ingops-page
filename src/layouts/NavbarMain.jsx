@@ -7,7 +7,7 @@ import {
     Button,
     IconButton,
 } from "@material-tailwind/react";
-import icon from "@/assets/icons/icon.webp";
+import icon from "@/assets/icon.webp";
 
 function NavbarMain() {
     const [openNav, setOpenNav] = React.useState(false);

@@ -1,5 +1,5 @@
 import { Button, Typography } from "@material-tailwind/react"
-import headerImg from "@/assets/planes/header_planes.webp";
+import headerImg from "@/assets/header_planes.webp";
 
 function HeaderPLans() {
   return (
