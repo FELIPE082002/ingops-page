@@ -1,5 +1,13 @@
 export const plans = [
     {
+        title: 'CMS',
+        tools: [
+            {
+                name: 'Wordpress'
+            },
+        ]
+    },
+    {
         title: 'FRONT-END',
         tools: [
             {
@@ -88,20 +96,6 @@ export const plans = [
             }
         ]
     },
-    {
-        title: 'FRONT-END',
-        tools: [
-            {
-                name: 'vue.js'
-            },
-            {
-                name: 'vue.js'
-            },
-            {
-                name: 'vue.js'
-            }
-        ]
-    }
 ];
 
 export default plans

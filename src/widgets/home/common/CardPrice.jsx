@@ -19,14 +19,14 @@ function CardPrice({ title, price, dollar, items, number }) {
     };
 
     return (
-        <Card className="flex flex-col w-4/5 p-5 gap-2 justify-between ">
+        <Card className="flex flex-col w-4/5 p-5 gap-2 justify-between">
             <div>
                 <div className="p-2 my-2 w-full rounded-lg shadow-lg text-white bg-deep-purple-500">
                     {title}
                 </div>
                 <div className="flex flex-col gap-5">
                     <div>
-                        Por solo
+                        Desde:
                         <div className="text-deep-purple-500 text-4xl font-semibold">
                             ${formatPrice(price)}*
                         </div>

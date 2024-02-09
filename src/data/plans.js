@@ -69,7 +69,7 @@ export const plans = [
                 ]
             },
             {
-                title: 'PÁGINAS WEB',
+                title: 'INTERMEDIO',
                 price: 700000,
                 dollar: dollar,
                 items: [
@@ -80,8 +80,8 @@ export const plans = [
                 ]
             },
             {
-                title: 'E-COMMERCE',
-                price: 1200000,
+                title: 'PREMIUM',
+                price: 1100000,
                 dollar: dollar,
                 items: [
                     { text: "Diseño de identidad." },

@@ -13,7 +13,7 @@ function HeaderPLans() {
         </div>
         <div className="p-5">
           <h2 className="text-2xl font-semibold text-deep-purple-500">
-           OFRECEMOS 12 PLANES VARIADOS PARA CONVERTIR TUS SUEÑOS EN REALIDAD
+           OFRECEMOS 9 PLANES VARIADOS PARA CONVERTIR TUS SUEÑOS EN REALIDAD
           </h2>
           <div>
             En Ingops, ofrecemos servicios y planes diseñados para impulsar el crecimiento exponencial de tu empresa.          </div>

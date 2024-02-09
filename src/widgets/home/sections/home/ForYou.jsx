@@ -11,7 +11,7 @@ function ForYou() {
                 <div>
                     <Typography variant="h2" color="deep-purple">
 
-                        ¡CONOCE LO QUE TENMOS PARA TI!
+                        ¡CONOCE LO QUE TENEMOS PARA TI!
                     </Typography>
                 </div>
                 <div>
